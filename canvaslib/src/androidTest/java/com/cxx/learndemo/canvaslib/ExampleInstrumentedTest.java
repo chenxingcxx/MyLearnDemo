@@ -1,4 +1,4 @@
-package com.cxx.learndemo.mylearndemo;
+package com.cxx.learndemo.canvaslib;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.cxx.learndemo.mylearndemo", appContext.getPackageName());
+        assertEquals("com.cxx.learndemo.canvaslib.test", appContext.getPackageName());
     }
 }
