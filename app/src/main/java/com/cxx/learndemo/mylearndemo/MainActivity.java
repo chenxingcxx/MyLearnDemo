@@ -42,5 +42,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        findViewById(R.id.tv_bbbb).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               if (secondPresentation != null){
+                   secondPresentation.dismiss();
+                   secondPresentation = null;
+               }
+            }
+        });
     }
 }
