@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.hardware.display.DisplayManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 Display[] displays = displayManager.getDisplays();
+                for (Display d : displays) {
+                    Log.d("Display_log", d.toString());
+                }
                 if (displays.length > 1) {
                     Display display = displays[1];
                     secondPresentation = new SecondPresentation(MainActivity.this, display);
@@ -46,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_bbbb).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               if (secondPresentation != null){
-                   secondPresentation.dismiss();
-                   secondPresentation = null;
-               }
+                if (secondPresentation != null) {
+                    secondPresentation.dismiss();
+                    secondPresentation = null;
+                }
             }
         });
     }
