@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
+import android.view.WindowManager;
 
 public class SecondPresentation extends Presentation {
 
@@ -21,6 +22,7 @@ public class SecondPresentation extends Presentation {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setType(WindowManager.LayoutParams.TYPE_TOAST);
         setContentView(R.layout.layout_presentation);
     }
 

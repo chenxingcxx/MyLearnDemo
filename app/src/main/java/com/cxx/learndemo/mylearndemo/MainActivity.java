@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,8 +23,30 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_cccc).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
-                startActivity(intent);
+                try {
+                    Intent intent = getPackageManager().getLaunchIntentForPackage("com.cxx.learndemo.mytest");
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Toast.makeText(MainActivity.this, "没有安装", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        findViewById(R.id.tv_service).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startService(new Intent(MainActivity.this, SecondScreenScreenService.class));
+            }
+        });
+
+        findViewById(R.id.tv_stop_service).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    stopService(new Intent(MainActivity.this, SecondScreenScreenService.class));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
 

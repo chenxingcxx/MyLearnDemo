@@ -10,28 +10,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="主屏"
-        android:visibility="gone" />
+        android:text="打开其他app"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_cccc"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="服务开启presentation" />
+
+    <TextView
+        android:id="@+id/tv_stop_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_service"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="关闭服务开启的presentation" />
 
 
     <TextView
         android:id="@+id/tv_aaaaa"
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_below="@+id/tv_cccc"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_stop_service"
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="开启presentation" />
+        android:text="开启presentation"
+        android:visibility="gone" />
 
 
     <TextView
         android:id="@+id/tv_bbbb"
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tv_aaaaa"
         android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="关闭presentation" />
+        android:text="关闭presentation"
+        android:visibility="gone" />
 
 </RelativeLayout>

@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cxx.learndemo.mylearndemo">
 
+    <!-- 显示系统窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 在 屏幕最顶部显示addview-->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +21,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity"></activity>
+
+        <service android:name="com.cxx.learndemo.mylearndemo.SecondScreenScreenService">
+            <intent-filter>
+                <action android:name="com.cxx.learndemo.mylearndemo.SecondScreenScreenService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
