@@ -1,7 +1,5 @@
 package com.cxx.learndemo.mylearndemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.display.DisplayManager;
@@ -10,6 +8,8 @@ import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
