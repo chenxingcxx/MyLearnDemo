@@ -1,1 +1,1 @@
-include ':app', ':canvaslib', ':mytest'
+include ':app', ':canvaslib', ':mytest', ':mvvmaccdemo'
