@@ -27,6 +27,7 @@ public class SecondScreenScreenService extends Service {
         super.onCreate();
         Log.i(TAG, "onCreate()");
         initPresentation();
+
     }
 
     private void initPresentation() {

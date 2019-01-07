@@ -6,6 +6,7 @@ import android.hardware.display.DisplayManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
 
@@ -31,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+//        findViewById(R.id.tv_service).setOnKeyListener(new View.OnKeyListener() {
+//            @Override
+//            public boolean onKey(View v, int keyCode, KeyEvent event) {
+//                return false;
+//            }
+//        });
 
         findViewById(R.id.tv_service).setOnClickListener(new View.OnClickListener() {
             @Override
