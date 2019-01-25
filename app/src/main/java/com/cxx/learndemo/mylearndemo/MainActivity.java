@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        findViewById(R.id.tv_service).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.tv_servicess).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startService(new Intent(MainActivity.this, SecondScreenScreenService.class));
