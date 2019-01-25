@@ -58,4 +58,23 @@
         android:text="关闭presentation"
         android:visibility="gone" />
 
+    <TextView
+        android:id="@+id/tv_bbbbccc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_aaaaa"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="开始动画" />
+
+
+    <ImageView
+        android:id="@+id/img_ani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/dsfcdsf" />
+
 </RelativeLayout>
