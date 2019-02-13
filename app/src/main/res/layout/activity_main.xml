@@ -77,4 +77,15 @@
         android:layout_marginTop="50dp"
         android:src="@mipmap/dsfcdsf" />
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_bbbbccc"
+        android:minHeight="20dp"
+        android:padding="10dp"
+        android:progressDrawable="@drawable/progressbar_bg" />
+
 </RelativeLayout>

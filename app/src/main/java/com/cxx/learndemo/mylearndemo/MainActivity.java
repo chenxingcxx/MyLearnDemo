@@ -8,9 +8,9 @@ import android.hardware.display.DisplayManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -129,6 +129,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+        ProgressBar progress_bar = findViewById(R.id.progress_bar);
+        progress_bar.setProgress(24);
+        progress_bar.setSecondaryProgress(50);
 
     }
+
+
+
 }
