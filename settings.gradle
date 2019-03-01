@@ -1,1 +1,1 @@
-include ':app', ':canvaslib', ':mytest', ':mvvmaccdemo'
+include ':app', ':canvaslib', ':mytest', ':mvvmaccdemo', ':barragedemo', ':rxjavademo', ':surfaceviewdemo'
